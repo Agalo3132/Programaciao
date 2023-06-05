@@ -34,4 +34,15 @@ public class LoginHandleDB {
             return lg;
         }
     }
+
+    public Login getLogin(String name, String password){
+        try (Connection connection = DatabaseConnection.getConnection()){
+
+
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
 }
