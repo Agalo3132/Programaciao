@@ -52,4 +52,18 @@ public class LoginHandleDB {
         }
         return null;
     }
+
+    public int addLogin (Login login) {
+
+        String query = "INSERT into login ON "
+        try(Connection connection = DatabaseConnection.getConnection();
+            PreparedStatement ps = connection.prepareStatement()){
+
+
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return 0;
+    }
 }
